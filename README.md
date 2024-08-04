@@ -1,12 +1,6 @@
 # CR Consultoría
 
 Este es el sitio web oficial de **CR Consultoría**, una consultora donde se ofrecen soluciones personalizadas para administración y consultoría.
-
-## Contenido
-
-- [Descripción](#descripción)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-
   
 ## Descripción
 
