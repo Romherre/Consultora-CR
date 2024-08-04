@@ -1,0 +1,114 @@
+footer {
+    background-color: #004481;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #e9e9e9;
+    font-family:sans-serif;
+    font-size: 15px;
+}
+
+.map-container,
+.social-container,
+.footer-links {
+    flex: 1;
+}
+
+.map-container {
+    max-width: 300px;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 100px;
+    border: 0;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.copy {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #ffffff
+}
+
+.footer-links {
+    max-width: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #4a9ef8;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+.footer-links a:hover {
+    /* text-decoration: underline; */
+    color:white;
+}
+
+
+
+.direccion {
+    color: rgb(247, 247, 250);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Los elementos se apilarán verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .map-container,
+    .social-container,
+    .footer-links {
+        max-width: 100%; /* Asegura que los elementos ocupen el ancho completo del contenedor */
+        margin-bottom: 20px; /* Agrega margen entre secciones en pantallas pequeñas */
+    }
+
+    .map-container iframe {
+        height: 150px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+    }
+
+    .social-icons img {
+        width: 30px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    }
+}

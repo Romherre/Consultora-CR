@@ -1,0 +1,228 @@
+/* Reset y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #121212;
+    background-color: #faf9f9;
+}
+
+/* Estilos del Header y Navegación */
+header {
+    background-color: #004481;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+nav .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburguesa span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+nav ul li a:hover {
+    color: #1973b8;
+}
+
+/* Estilos móviles para la navegación */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: flex;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #004481;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #1973b8;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Main */
+main {
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #004481;
+}
+
+.planes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.servicio {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+
+.servicio img {
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: 280px;
+    margin-bottom: 5px; /* Menos espacio entre las imágenes */
+    border-radius: 15px; /* Ajusta el valor según la redondez deseada */
+    box-shadow: 0 4px 8px rgb(94, 99, 99);
+    
+}
+
+
+.servicio h3 {
+    color: #004481;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.servicio p {
+    color: #272626;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .planes-container {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+        align-items: center; /* Centra los elementos en el eje horizontal */
+        margin-top: 20px;
+    }
+
+    .servicio {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        max-width: 300px; /* Ancho máximo para los servicios en dispositivos móviles */
+    }
+
+    .servicio img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Altura automática para mantener la proporción */
+        border-radius: 15px; /* Borde redondeado */
+        box-shadow: 0 4px 8px aqua; /* Sombra */
+    }
+
+    .servicio h3 {
+        color: #004481;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px; /* Ajusta el espaciado según necesites */
+    }
+
+    .servicio p {
+        color: #333;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #004481;
+}
+
+#descripcion {
+    color: #004481;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Los elementos se apilarán verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .map-container,
+    .social-container,
+    .footer-links {
+        max-width: 100%; /* Asegura que los elementos ocupen el ancho completo del contenedor */
+        margin-bottom: 20px; /* Agrega margen entre secciones en pantallas pequeñas */
+    }
+
+    .map-container iframe {
+        height: 150px; /* Ajusta la altura del mapa en pantallas más pequeñas */
+    }
+
+    .social-icons img {
+        width: 30px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+    }
+}
